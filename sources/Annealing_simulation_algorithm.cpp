@@ -88,5 +88,5 @@ void Annealing_simulation_algorithm::test()
 
 void Annealing_simulation_algorithm::show(const std::pair<double,double> point, const int iteration)
 	{
-		std::cout<<"| "<< std::setw(11)<<iteration    <<" || "<<std::setw(9) <<temperature.first<<"|"<<std::setw(9)<<temperature.second<<" || "<<std::setw(12)<<point.first<<" | "<<std::setw(12)<<point.second<<" |\n";
+		std::cout<<"| "<< std::setw(11)<<iteration    <<std::fixed<<std::setprecision(3)<<" || "<<std::setw(9) <<temperature.second<<"|"<<std::setw(9)<<temperature.first<<" || "<<std::showpos<<std::setw(12)<<point.first<<" | "<<std::setw(12)<<point.second<<std::noshowpos<<" |\n";
 	}
